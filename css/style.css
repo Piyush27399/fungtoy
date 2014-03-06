@@ -5,14 +5,16 @@ html, body {
 
 body {
 	margin: 0;
+	color: #98b57f;
 	text-align: center;
 }
 
 a {
+	color: #6c51af;
 	text-decoration: none;
 }
 
-.l-div,
+.l-main-div,
 .l-background-img {
 	display: block;
 	position: relative;
@@ -55,8 +57,11 @@ a {
 	width: 80%;
 	height: 80%;
 	border-radius: 10px;
-	background-color: rgba(255,255,255,0.7);
-	font-family: 'Gabriela', Helvetica, sans-serif;
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px #888;
+	box-shadow: 0 0 5px #888;
+	background-color: rgba(252,252,252,0.85);
+	font-family: Helvetica, sans-serif;
 }
 
 ul {
