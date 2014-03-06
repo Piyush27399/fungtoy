@@ -8,6 +8,10 @@ body {
 	text-align: center;
 }
 
+a {
+	text-decoration: none;
+}
+
 .l-div,
 .l-background-img {
 	display: block;
@@ -45,6 +49,7 @@ body {
 }
 
 .l-wrapper {
+	position: relative;
 	margin: 0 auto;
 	padding: 10px;
 	width: 80%;
@@ -53,3 +58,24 @@ body {
 	background-color: rgba(255,255,255,0.7);
 	font-family: 'Gabriela', Helvetica, sans-serif;
 }
+
+ul {
+	padding: 0;
+}
+
+li {
+	display: inline;
+	margin: 0 5px;
+	list-style-type: none;
+}
+
+.categories {
+	position: absolute;
+	left: 0;
+	bottom: 30px;
+	right: 0;
+	height: 30px;
+	margin: auto;
+	text-align: center;
+}
+
