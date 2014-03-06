@@ -6,12 +6,30 @@ html, body {
 body {
 	margin: 0;
 	color: #98b57f;
+}
+
+h1, h2 {
+	font-family: 'Codystar', Helvetica, sans-serif;
 	text-align: center;
 }
 
 a {
 	color: #6c51af;
 	text-decoration: none;
+}
+
+p {
+	font-family: Helvetica, sans-serif;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	display: inline;
+	margin: 0 5px;
+	list-style-type: none;
 }
 
 .l-main-div,
@@ -22,6 +40,7 @@ a {
 	height: 100%;
 	min-width: 100%;
 	min-height: 100%;
+	text-align: center;
 }
 
 .l-background-img {
@@ -59,19 +78,12 @@ a {
 	border-radius: 10px;
 	-moz-box-shadow: 0 0 5px #888;
 	-webkit-box-shadow: 0 0 5px #888;
-	box-shadow: 0 0 5px #888;
+	box-shadow: inset 0 0 5px #888;
 	background-color: rgba(252,252,252,0.85);
-	font-family: Helvetica, sans-serif;
 }
 
-ul {
-	padding: 0;
-}
-
-li {
-	display: inline;
-	margin: 0 5px;
-	list-style-type: none;
+.l-content-div {
+	margin: 40px;
 }
 
 .categories {
@@ -84,3 +96,22 @@ li {
 	text-align: center;
 }
 
+#adventure {
+
+}
+
+#wedding-details {
+
+}
+
+#wedding-party {
+
+}
+
+#registry {
+
+}
+
+#contact {
+
+}
