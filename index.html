@@ -10,6 +10,21 @@
 		<link type="text/css" rel="stylesheet" href="css/style.css" media="screen" />
 		<link href='http://fonts.googleapis.com/css?family=Codystar' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+
+	    <script type="text/javascript"
+	      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBw_kBJ5TBV4p7lGrLEJcEHvNW_4H5Gjog&sensor=false">
+	    </script>
+	    <script type="text/javascript">
+	      function initialize() {
+	        var mapOptions = {
+	          center: new google.maps.LatLng(-34.397, 150.644),
+	          zoom: 8
+	        };
+	        var map = new google.maps.Map(document.getElementById("map-wedding"), mapOptions);
+	      }
+	      google.maps.event.addDomListener(window, 'load', initialize);
+	    </script>
+
 	</head>
 	<body>
 		<div class="l-main-div">
@@ -55,7 +70,8 @@
 			<p></p>
 		</div>
 		<div class="l-content-div" id="wedding-details">
-
+			<h2>Locations</h2>
+			<div id="map-wedding"/>
 		</div>
 		<div class="l-content-div" id="wedding-party">
 
