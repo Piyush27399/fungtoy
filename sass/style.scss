@@ -8,16 +8,16 @@ html, body {
 body {
 	margin: 0;
 	color: #98b57f;
-	font-family: 'Droid Sans', Helvetica, sans-serif;
+	font-family: $font-stack;
 }
 
 h1, h2 {
-	font-family: 'Codystar', Helvetica, sans-serif;
+	font-family: $header-font-stack;
 	text-align: center;
 }
 
 a {
-	color: #6c51af;
+	color: $purple;
 	text-decoration: none;
 }
 
@@ -75,11 +75,11 @@ li {
 	width: 75%;
 	height: 75%;
 	border-radius: 10px;
-	border: 10px solid rgba(168,211,166,0.7);
+	border: 10px solid $green-border;
 	-moz-box-shadow: 0 0 5px #888;
 	-webkit-box-shadow: 0 0 5px #888;
 	box-shadow: inset 0 0 5px #888;
-	background-color: rgba(252,252,252,0.85);
+	background-color: $white-translucent;
 }
 
 .l-content-div {
