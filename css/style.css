@@ -12,18 +12,6 @@ h1, h2 {
   font-family: "Codystar", Helvetica, sans-serif;
   text-align: center; }
 
-a {
-  color: #6c51af;
-  text-decoration: none; }
-
-ul {
-  padding: 0; }
-
-li {
-  display: inline;
-  margin: 0 5px;
-  list-style-type: none; }
-
 .l-main-div,
 .l-background-img {
   display: block;
@@ -81,8 +69,17 @@ li {
   height: 30px;
   margin: auto;
   text-align: center; }
+  .categories ul {
+    padding: 0; }
+  .categories li {
+    display: inline;
+    margin: 0 5px;
+    list-style-type: none; }
+  .categories a {
+    color: #6c51af;
+    text-decoration: none; }
 
 #map-wedding {
-  width: 400px;
+  width: 800px;
   height: 400px;
   margin: 0 auto; }

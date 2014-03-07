@@ -11,22 +11,12 @@
 		<link href='http://fonts.googleapis.com/css?family=Codystar' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 
-	    <script type="text/javascript"
-	      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBw_kBJ5TBV4p7lGrLEJcEHvNW_4H5Gjog&sensor=false">
-	    </script>
-	    <script type="text/javascript">
-	      function initialize() {
-	        var mapOptions = {
-	          center: new google.maps.LatLng(-34.397, 150.644),
-	          zoom: 8
-	        };
-	        var map = new google.maps.Map(document.getElementById("map-wedding"), mapOptions);
-	      }
-	      google.maps.event.addDomListener(window, 'load', initialize);
-	    </script>
+	    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBw_kBJ5TBV4p7lGrLEJcEHvNW_4H5Gjog&sensor=false"></script>
+	    <script type="text/javascript" src="js/map.js"></script>
+
 
 	</head>
-	<body>
+	<body onload="initialize()">
 		<div class="l-main-div">
 			<div class="l-background-img"></div>
 			<div class="l-content-a">
@@ -38,17 +28,18 @@
 					<p>California Academy of Sciences</p>
 					<div class="categories">
 						<ul>
-							<li><a href="">Our Adventure</a></li>
-							<li><a href="">Wedding Party</a></li>
-							<li><a href="">Wedding Details</a></li>
-							<li><a href="">Registry</a></li>
-							<li><a href="">Contact</a></li>
+							<li><a href="#adventure">Our Adventure</a></li>
+							<li><a href="#wedding-party">Wedding Party</a></li>
+							<li><a href="#wedding-details">Wedding Details</a></li>
+							<li><a href="#registry">Registry</a></li>
+							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			</div>
 		</div>
+		<a name="adventure"></a>
 		<div class="l-content-div" id="adventure">
 			<h2>First Meeting</h2>
 			<p>
@@ -69,16 +60,20 @@
 			<h2>The Groom</h2>
 			<p></p>
 		</div>
+		<a name="wedding-details"></a>
 		<div class="l-content-div" id="wedding-details">
 			<h2>Locations</h2>
-			<div id="map-wedding"/>
+			<div id="map-wedding"></div>
 		</div>
+		<a name="wedding-party"></a>
 		<div class="l-content-div" id="wedding-party">
 
 		</div>
+		<a name="registry"></a>
 		<div class="l-content-div" id="registry">
 
 		</div>
+		<a name="contact"></a>
 		<div class="l-content-div" id="contact">
 
 		</div>

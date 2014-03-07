@@ -16,21 +16,6 @@ h1, h2 {
 	text-align: center;
 }
 
-a {
-	color: $purple;
-	text-decoration: none;
-}
-
-ul {
-	padding: 0;
-}
-
-li {
-	display: inline;
-	margin: 0 5px;
-	list-style-type: none;
-}
-
 .l-main-div,
 .l-background-img {
 	display: block;
@@ -94,6 +79,18 @@ li {
 	height: 30px;
 	margin: auto;
 	text-align: center;
+	ul {
+		padding: 0;
+	}
+	li {
+		display: inline;
+		margin: 0 5px;
+		list-style-type: none;
+	}
+	a {
+		color: $purple;
+		text-decoration: none;
+	}
 }
 
 #adventure {
@@ -105,7 +102,7 @@ li {
 }
 
 #map-wedding {
-	width: 400px;
+	width: 800px;
 	height: 400px;
 	margin: 0 auto;
 }
