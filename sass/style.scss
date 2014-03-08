@@ -16,6 +16,11 @@ h1, h2 {
 	text-align: center;
 }
 
+a {
+	color: $purple;
+	text-decoration: none;
+}
+
 .l-main-div,
 .l-background-img {
 	display: block;
@@ -59,8 +64,8 @@ h1, h2 {
 	padding: 30px;
 	width: 75%;
 	height: 75%;
-	border-radius: 10px;
 	border: 10px solid $green-border;
+	border-radius: $radius;
 	-moz-box-shadow: 0 0 5px #888;
 	-webkit-box-shadow: 0 0 5px #888;
 	box-shadow: inset 0 0 5px #888;
@@ -69,6 +74,10 @@ h1, h2 {
 
 .l-content-div {
 	margin: 40px;
+	border: 5px solid $green-border;
+	border-radius: $radius;
+	padding: 30px;
+	text-align: center;
 }
 
 .categories {
@@ -87,10 +96,6 @@ h1, h2 {
 		margin: 0 5px;
 		list-style-type: none;
 	}
-	a {
-		color: $purple;
-		text-decoration: none;
-	}
 }
 
 #adventure {
@@ -98,7 +103,10 @@ h1, h2 {
 }
 
 #wedding-details {
-
+	#ceremony, #reception, #directions, #hotels {
+		margin: 10px;
+		text-align: center;
+	}
 }
 
 #map-wedding {
