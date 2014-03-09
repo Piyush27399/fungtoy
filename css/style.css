@@ -53,8 +53,8 @@ a {
   position: relative;
   margin: 0 auto;
   padding: 30px;
-  max-width: 90%;
-  max-height: 95%;
+  max-width: 85%;
+  max-height: 85%;
   border: 10px solid rgba(168, 211, 166, 0.7);
   border-radius: 10px;
   -moz-box-shadow: 0 0 5px #888;
@@ -66,12 +66,16 @@ a {
     margin: 0;
     font-size: 2.5rem;
     line-height: 1.25em; }
-  .l-wrapper img {
+  .l-wrapper #florish {
+    width: 20%; }
+  .l-wrapper #fungtoy {
     width: 50%;
-    margin-bottom: 40px; }
-
-.large-type {
-  font-size: 1.25rem; }
+    margin-bottom: 40px;
+    border-radius: 10px; }
+  .l-wrapper #title-details {
+    margin: 20px; }
+  .l-wrapper .large-type {
+    font-size: 1.25rem; }
 
 .categories {
   position: absolute;
@@ -86,7 +90,8 @@ a {
   .categories li {
     display: inline;
     margin: 0 5px;
-    list-style-type: none; }
+    list-style-type: none;
+    font-size: 0.9rem; }
 
 .l-content-div {
   margin: 50px;

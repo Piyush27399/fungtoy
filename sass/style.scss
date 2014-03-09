@@ -62,8 +62,8 @@ a {
 	position: relative;
 	margin: 0 auto;
 	padding: 30px;
-	max-width: 90%;
-	max-height: 95%;
+	max-width: 85%;
+	max-height: 85%;
 	border: 10px solid $green-border;
 	border-radius: $radius;
 	-moz-box-shadow: 0 0 5px #888;
@@ -76,15 +76,23 @@ a {
 		font-size: 2.5rem;
 		line-height: 1.25em;
 	}
-	img {
+	#florish {
+		width: 20%;
+	}
+	#fungtoy {
 		width: 50%;
 		margin-bottom: 40px;
+		border-radius: $radius;
+	}
+	#title-details {
+		margin: 20px;
+	}
+	.large-type {
+		font-size: 1.25rem;
 	}
 }
 
-.large-type {
-	font-size: 1.25rem;
-}
+
 
 .categories {
 	position: absolute;
@@ -101,6 +109,7 @@ a {
 		display: inline;
 		margin: 0 5px;
 		list-style-type: none;
+		font-size: 0.9rem;
 	}
 }
 
