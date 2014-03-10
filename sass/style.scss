@@ -21,8 +21,7 @@ a {
 	text-decoration: none;
 }
 
-.l-main-div,
-.l-background-img {
+.l-main-div {
 	display: block;
 	position: relative;
 	width: 100%;
@@ -92,8 +91,6 @@ a {
 	}
 }
 
-
-
 .categories {
 	position: absolute;
 	left: 0;
@@ -136,6 +133,9 @@ a {
 	width: 800px;
 	height: 400px;
 	margin: 0 auto;
+	img {
+		max-width: none
+	}
 }
 
 #wedding-party {

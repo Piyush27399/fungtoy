@@ -16,8 +16,7 @@ a {
   color: #6c51af;
   text-decoration: none; }
 
-.l-main-div,
-.l-background-img {
+.l-main-div {
   display: block;
   position: relative;
   width: 100%;
@@ -108,3 +107,5 @@ a {
   width: 800px;
   height: 400px;
   margin: 0 auto; }
+  #map-wedding img {
+    max-width: none; }
