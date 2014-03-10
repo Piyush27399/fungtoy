@@ -103,9 +103,8 @@ a {
   text-align: center; }
 
 #map-wedding {
-  width: auto;
+  width: 800px;
   height: 400px;
-  max-width: 800px;
   margin: 0 auto; }
   #map-wedding img {
     max-width: none; }
