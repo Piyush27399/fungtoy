@@ -85,7 +85,7 @@ a {
   -moz-box-shadow: 0 0 5px #888888;
   -webkit-box-shadow: 0 0 5px #888888;
   box-shadow: inset 0 0 5px #888888;
-  background-color: rgba(252, 252, 252, 0.7);
+  background-color: rgba(252, 252, 252, 0.75);
   text-align: center; }
 
 #wedding-details .section {
@@ -95,6 +95,7 @@ a {
 #map-wedding {
   width: 100%;
   height: 500px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border-radius: 10px; }
   #map-wedding img {
     max-width: none; }
