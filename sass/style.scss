@@ -89,12 +89,15 @@ a {
 	padding: 30px 50px;
 	border: 5px solid $green-border;
 	border-radius: $radius;
+	@include inset-box-shadow(#888);
+	background-color: rgba(252,252,252,0.70);
 
-	background: transparent url("../img/watercolor-mid02.jpg") center center no-repeat;
-	background-size: cover;
-	background-position: 50% 50%;
 
 	text-align: center;
+}
+
+.test {
+	background: transparent url("../img/watercolor-mid02.jpg") center repeat;
 }
 
 #wedding-details {
