@@ -41,7 +41,7 @@ a {
 	padding: 30px;
 	border: 10px solid $green-border;
 	border-radius: $radius;
-	@include inset-box-shadow(#888);
+	@include inset-box-shadow($gray-shadow);
 	background-color: $white-translucent;
 	line-height: 1.5em;
 	h1 {
@@ -84,20 +84,21 @@ a {
 	}
 }
 
+.l-secondary-div {
+	display: block;
+	padding: 10px;
+	background: transparent url("../img/watercolor-mid02.jpg") repeat;
+	background-position: center;
+}
+
 .l-content-div {
 	margin: 50px;
 	padding: 30px 50px;
 	border: 5px solid $green-border;
 	border-radius: $radius;
 	@include inset-box-shadow(#888);
-	background-color: rgba(252,252,252,0.70);
-
-
+	background-color: $white-translucenter;
 	text-align: center;
-}
-
-.test {
-	background: transparent url("../img/watercolor-mid02.jpg") center repeat;
 }
 
 #wedding-details {
