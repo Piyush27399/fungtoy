@@ -76,14 +76,10 @@ a {
   padding: 30px 50px;
   border: 5px solid rgba(168, 211, 166, 0.7);
   border-radius: 10px;
-  -moz-box-shadow: 0 0 5px #888888;
-  -webkit-box-shadow: 0 0 5px #888888;
-  box-shadow: inset 0 0 5px #888888;
-  background-color: rgba(252, 252, 252, 0.85);
+  background: transparent url("../img/watercolor-mid02.jpg") center center no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
   text-align: center; }
-
-.test {
-  background: transparent url("../img/watercolor-grunge.jpg") repeat; }
 
 #wedding-details .section {
   margin: 10px;
