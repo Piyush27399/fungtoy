@@ -22,3 +22,20 @@ $('#registry-link').click(function() {
 $('#contact-link').click(function() {
 	scrollDown('contact');
 });
+
+
+function setMapScrollWheel(pMap, pVal) {
+    pMap.setOptions({ scrollwheel: pVal });
+}
+
+//enable scrolling only when user clicks on map, and disable otherwise
+function mapTouchup(map){
+    google.maps.event.addListener(map, 'click', function(){
+        setMapScrollWheel(map, true);
+    });
+
+    $(window).scroll(function() {
+        setMapScrollWheel(map, false);
+    });
+}
+

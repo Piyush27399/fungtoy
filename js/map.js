@@ -5,9 +5,11 @@ function initialize() {
 		var mapOptions = {
 		center: new google.maps.LatLng(37.792694,-122.399724),
 		zoom: 10,
-		mapTypeId: google.maps.MapTypeId.ROADMAP
+		mapTypeId: google.maps.MapTypeId.ROADMAP,
+    scrollwheel: false
 		};
-		var map = new google.maps.Map(document.getElementById("map-wedding"), mapOptions);
+
+    var map = new google.maps.Map(document.getElementById("map-wedding"), mapOptions);
 
 	// Map Styles!
 
@@ -44,4 +46,6 @@ function initialize() {
   		]
 
 		map.setOptions({styles: styles});
+
+    return map;
 }
