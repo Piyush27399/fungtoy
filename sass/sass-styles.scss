@@ -9,12 +9,13 @@ $gray: #d0caca;		//rgb(208,202,202)
 $lavender: #9885c7;	//rgb(152,133,199)
 $seafoam: #a8d3a6;	//rgb(152,181,127)
 $moss: #98b57f;		//rgb(168,211,166)
+$dark-green: #66a266;
 $purple: #6c51af;
 $gray-shadow: #888;
 
 $green-border: rgba(168,211,166,0.7);
 $white-translucent: rgba(252,252,252,0.85);
-$white-translucenter: rgba(252,252,252,0.75);
+$white-translucenter: rgba(252,252,252,0.8);
 
 @mixin inset-box-shadow($color) {
 	-moz-box-shadow: 0 0 5px $color;
@@ -51,7 +52,7 @@ $xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max
 $xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})" !default;
 $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})" !default;
 
-/ Since the typical default browser font-size is 16px, that makes the calculation for grid size.
+// Since the typical default browser font-size is 16px, that makes the calculation for grid size.
 // If you want your base font-size to be a different size and not have it effect grid size too,
 // set the value of $rem-base to $base-font-size ($rem-base: $base-font-size;)
 $rem-base: 16px !default;

@@ -7,7 +7,7 @@ html, body {
 
 body {
 	margin: 0;
-	color: #98b57f;
+	color: $dark-green;
 	font-family: $font-stack;
 }
 
@@ -37,6 +37,7 @@ a {
 .l-main-content {
 	display: block;
 	position: relative;
+	max-width: 1200px;
 	margin: 0 auto;
 	padding: 30px;
 	border: 10px solid $green-border;
@@ -46,7 +47,7 @@ a {
 	line-height: 1.5em;
 	h1 {
 		margin: 0;
-		font-size: 2.5rem;
+		font-size: rem-calc(40);
 		line-height: 1.25em;
 	}
 	#florish {
@@ -61,7 +62,7 @@ a {
 		margin: 20px;
 	}
 	.large-type {
-		font-size: 1.25rem;
+		font-size: rem-calc(20);
 	}
 }
 
@@ -79,20 +80,22 @@ a {
 			display: inline;
 			margin: 0 5px;
 			list-style-type: none;
-			font-size: 0.9rem;
+			font-size: rem-calc(14.5);
 		}
 	}
 }
 
 .l-secondary-div {
 	display: block;
-	padding: 10px;
+	margin: 0 auto;
+	padding: 50px;
 	background: transparent url("../img/watercolor-mid02.jpg") repeat;
 	background-position: center;
 }
 
 .l-content-div {
-	margin: 50px;
+	max-width: 1200px;
+	margin: 50px auto;
 	padding: 30px 50px;
 	border: 5px solid $green-border;
 	border-radius: $radius;
