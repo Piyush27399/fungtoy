@@ -11,7 +11,8 @@ html, body {
 body {
   margin: 0;
   color: #66a266;
-  font-family: "Droid Sans", Helvetica, sans-serif; }
+  font-family: "Droid Sans", Helvetica, sans-serif;
+  line-height: 1.25em; }
 
 h1, h2 {
   font-family: "Codystar", Helvetica, sans-serif;
@@ -97,8 +98,13 @@ a {
   text-align: center; }
 
 .section {
-  margin: 10px 10px 40px 10px;
-  text-align: center; }
+  margin: 10px 10px 40px 10px; }
+
+#adventure .section {
+  text-align: left; }
+
+#wedding-party .section {
+  text-align: left; }
 
 #map-wedding {
   width: 100%;

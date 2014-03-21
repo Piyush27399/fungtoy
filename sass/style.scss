@@ -9,6 +9,7 @@ body {
 	margin: 0;
 	color: $dark-green;
 	font-family: $font-stack;
+	line-height: 1.25em;
 }
 
 h1, h2 {
@@ -106,7 +107,18 @@ a {
 
 .section {
 	margin: 10px 10px 40px 10px;
-	text-align: center;
+}
+
+#adventure {
+	.section {
+		text-align: left;
+	}
+}
+
+#wedding-party {
+	.section {
+		text-align: left;
+	}
 }
 
 #wedding-details {
@@ -122,3 +134,4 @@ a {
 		max-width: none
 	}
 }
+
