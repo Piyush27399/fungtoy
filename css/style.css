@@ -105,6 +105,12 @@ a {
 
 #wedding-party .section {
   text-align: left; }
+#wedding-party .party-image {
+  float: left;
+  clear: left;
+  width: 150px;
+  margin: 10px;
+  border-radius: 10px; }
 
 #map-wedding {
   width: 100%;

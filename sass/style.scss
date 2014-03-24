@@ -119,6 +119,14 @@ a {
 	.section {
 		text-align: left;
 	}
+
+	.party-image {
+		float: left;
+		clear: left;
+		width: 150px;
+		margin: 10px;
+		border-radius: $radius;
+	}
 }
 
 #wedding-details {
