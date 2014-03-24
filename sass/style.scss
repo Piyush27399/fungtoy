@@ -95,6 +95,7 @@ a {
 }
 
 .l-content-div {
+	clear: left;
 	max-width: 1200px;
 	margin: 50px auto;
 	padding: 30px 50px;
@@ -107,6 +108,13 @@ a {
 
 .section {
 	margin: 10px 10px 40px 10px;
+	ul {
+		list-style-position: outside;
+		list-style-image: url("../img/heart.png");
+		li {
+			margin-bottom: 3px;
+		}
+	}
 }
 
 #adventure {
@@ -119,10 +127,11 @@ a {
 	.section {
 		text-align: left;
 	}
-
+	.party {
+		float: left;
+	}
 	.party-image {
 		float: left;
-		clear: left;
 		width: 150px;
 		margin: 10px;
 		border-radius: $radius;

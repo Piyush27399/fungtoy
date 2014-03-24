@@ -86,6 +86,7 @@ a {
   background-position: center; }
 
 .l-content-div {
+  clear: left;
   max-width: 1200px;
   margin: 50px auto;
   padding: 30px 50px;
@@ -99,15 +100,21 @@ a {
 
 .section {
   margin: 10px 10px 40px 10px; }
+  .section ul {
+    list-style-position: outside;
+    list-style-image: url("../img/heart.png"); }
+    .section ul li {
+      margin-bottom: 3px; }
 
 #adventure .section {
   text-align: left; }
 
 #wedding-party .section {
   text-align: left; }
+#wedding-party .party {
+  float: left; }
 #wedding-party .party-image {
   float: left;
-  clear: left;
   width: 150px;
   margin: 10px;
   border-radius: 10px; }
