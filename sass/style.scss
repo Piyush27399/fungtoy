@@ -13,6 +13,7 @@ body {
 }
 
 h1, h2 {
+	margin-bottom: 0;
 	font-family: $header-font-stack;
 	text-align: center;
 }
@@ -123,6 +124,12 @@ a {
 			margin-bottom: 3px;
 		}
 	}
+}
+
+.florish-mini {
+	display: block;
+	width: 100px;
+	margin: 0 auto;
 }
 
 #adventure {
