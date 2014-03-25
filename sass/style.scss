@@ -9,9 +9,11 @@ body {
 	margin: 0;
 	color: $dark-green;
 	font-family: $font-stack;
+	line-height: 1.25em;
 }
 
 h1, h2 {
+	margin-bottom: 0;
 	font-family: $header-font-stack;
 	text-align: center;
 }
@@ -19,6 +21,15 @@ h1, h2 {
 a {
 	color: $purple;
 	text-decoration: none;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
 }
 
 .l-main-div {
@@ -34,7 +45,7 @@ a {
 	text-align: center;
 }
 
-.l-main-content {
+#l-main-content {
 	display: block;
 	position: relative;
 	max-width: 1200px;
@@ -54,12 +65,9 @@ a {
 		width: 20%;
 	}
 	#fungtoy {
-		width: 50%;
+		width: 60%;
 		margin-bottom: 40px;
 		border-radius: $radius;
-	}
-	#title-details {
-		margin: 20px;
 	}
 	.large-type {
 		font-size: rem-calc(20);
@@ -106,7 +114,40 @@ a {
 
 .section {
 	margin: 10px 10px 40px 10px;
-	text-align: center;
+	ul {
+		list-style-position: outside;
+		list-style-image: url("../img/heart.png");
+		li {
+			margin-bottom: 3px;
+		}
+	}
+}
+
+.florish-mini {
+	display: block;
+	width: 100px;
+	margin: 0 auto;
+}
+
+#adventure {
+	.section {
+		text-align: left;
+	}
+}
+
+#wedding-party {
+	.section {
+		text-align: left;
+	}
+	.party {
+		float: left;
+	}
+	.party-image {
+		float: left;
+		width: 150px;
+		margin: 10px;
+		border-radius: $radius;
+	}
 }
 
 #wedding-details {
@@ -122,3 +163,4 @@ a {
 		max-width: none
 	}
 }
+

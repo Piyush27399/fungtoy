@@ -11,15 +11,25 @@ html, body {
 body {
   margin: 0;
   color: #66a266;
-  font-family: "Droid Sans", Helvetica, sans-serif; }
+  font-family: "Droid Sans", Helvetica, sans-serif;
+  line-height: 1.25em; }
 
 h1, h2 {
+  margin-bottom: 0;
   font-family: "Codystar", Helvetica, sans-serif;
   text-align: center; }
 
 a {
   color: #6c51af;
   text-decoration: none; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
 
 .l-main-div {
   display: block;
@@ -33,7 +43,7 @@ a {
   background-position: 50% 50%;
   text-align: center; }
 
-.l-main-content {
+#l-main-content {
   display: block;
   position: relative;
   max-width: 1200px;
@@ -46,19 +56,17 @@ a {
   box-shadow: inset 0 0 5px #888888;
   background-color: rgba(252, 252, 252, 0.85);
   line-height: 1.5em; }
-  .l-main-content h1 {
+  #l-main-content h1 {
     margin: 0;
     font-size: 2.5em;
     line-height: 1.25em; }
-  .l-main-content #florish {
+  #l-main-content #florish {
     width: 20%; }
-  .l-main-content #fungtoy {
-    width: 50%;
+  #l-main-content #fungtoy {
+    width: 60%;
     margin-bottom: 40px;
     border-radius: 10px; }
-  .l-main-content #title-details {
-    margin: 20px; }
-  .l-main-content .large-type {
+  #l-main-content .large-type {
     font-size: 1.25em; }
 
 .categories {
@@ -97,8 +105,30 @@ a {
   text-align: center; }
 
 .section {
-  margin: 10px 10px 40px 10px;
-  text-align: center; }
+  margin: 10px 10px 40px 10px; }
+  .section ul {
+    list-style-position: outside;
+    list-style-image: url("../img/heart.png"); }
+    .section ul li {
+      margin-bottom: 3px; }
+
+.florish-mini {
+  display: block;
+  width: 100px;
+  margin: 0 auto; }
+
+#adventure .section {
+  text-align: left; }
+
+#wedding-party .section {
+  text-align: left; }
+#wedding-party .party {
+  float: left; }
+#wedding-party .party-image {
+  float: left;
+  width: 150px;
+  margin: 10px;
+  border-radius: 10px; }
 
 #map-wedding {
   width: 100%;
