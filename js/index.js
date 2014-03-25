@@ -24,10 +24,20 @@ $('#contact-link').click(function() {
 });
 
 function contentReposition() {
-	var mainContent = document.getElementById('l-main-content');
-	var mainContentHeight = $(mainContent).height();
 	var screenHeight = $(window).height();
-	console.log(mainContentHeight);
+	var $mainDiv = $(".l-main-div");
+	var $mainContent = $('#l-main-content');
+	var mainContentHeight = $mainContent.height();
+	var marginTop = (screenHeight - mainContentHeight) / 4;
+	console.log(screenHeight);
+	console.log(marginTop);
+	if (marginTop > 30 && mainContentHeight <= screenHeight) {
+		$mainDiv.css("padding-top", marginTop);
+		$mainDiv.css("padding-bottom", marginTop);
+	}
+	else if (marginTop < 30) {
+		$mainDiv.css("padding", "30px");
+	}
 }
 
 $(window).resize(function() {
