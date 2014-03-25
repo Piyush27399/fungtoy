@@ -45,7 +45,7 @@ a {
 	text-align: center;
 }
 
-.l-main-content {
+#l-main-content {
 	display: block;
 	position: relative;
 	max-width: 1200px;
@@ -68,9 +68,6 @@ a {
 		width: 60%;
 		margin-bottom: 40px;
 		border-radius: $radius;
-	}
-	#title-details {
-		margin: 20px;
 	}
 	.large-type {
 		font-size: rem-calc(20);

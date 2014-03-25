@@ -43,7 +43,7 @@ a {
   background-position: 50% 50%;
   text-align: center; }
 
-.l-main-content {
+#l-main-content {
   display: block;
   position: relative;
   max-width: 1200px;
@@ -56,19 +56,17 @@ a {
   box-shadow: inset 0 0 5px #888888;
   background-color: rgba(252, 252, 252, 0.85);
   line-height: 1.5em; }
-  .l-main-content h1 {
+  #l-main-content h1 {
     margin: 0;
     font-size: 2.5em;
     line-height: 1.25em; }
-  .l-main-content #florish {
+  #l-main-content #florish {
     width: 20%; }
-  .l-main-content #fungtoy {
+  #l-main-content #fungtoy {
     width: 60%;
     margin-bottom: 40px;
     border-radius: 10px; }
-  .l-main-content #title-details {
-    margin: 20px; }
-  .l-main-content .large-type {
+  #l-main-content .large-type {
     font-size: 1.25em; }
 
 .categories {
