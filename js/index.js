@@ -27,10 +27,13 @@ function contentReposition() {
 	var screenHeight = $(window).height();
 	var $mainDiv = $(".l-main-div");
 	var $mainContent = $('#l-main-content');
-	var mainContentHeight = $mainContent.height();
+	var mainContentHeight = $mainContent.outerHeight(true);
 	var marginTop = (screenHeight - mainContentHeight) / 4;
-	console.log(screenHeight);
-	console.log(marginTop);
+
+	console.log("screen height = " + screenHeight);
+	console.log("main content height = " + mainContentHeight);
+	console.log("screen height - content height / 4 = " + marginTop);
+
 	if (marginTop > 30 && mainContentHeight <= screenHeight) {
 		$mainDiv.css("padding-top", marginTop);
 		$mainDiv.css("padding-bottom", marginTop);
@@ -40,6 +43,4 @@ function contentReposition() {
 	}
 }
 
-$(window).resize(function() {
-	contentReposition();
-})
+$(window).resize(contentReposition);
