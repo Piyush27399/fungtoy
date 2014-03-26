@@ -24,12 +24,23 @@ $('#contact-link').click(function() {
 });
 
 function contentReposition() {
-	var mainContent = document.getElementById('l-main-content');
-	var mainContentHeight = $(mainContent).height();
 	var screenHeight = $(window).height();
-	console.log(mainContentHeight);
+	var $mainDiv = $(".l-main-div");
+	var $mainContent = $('#l-main-content');
+	var mainContentHeight = $mainContent.outerHeight(true);
+	var marginTop = (screenHeight - mainContentHeight) / 4;
+
+	console.log("screen height = " + screenHeight);
+	console.log("main content height = " + mainContentHeight);
+	console.log("screen height - content height / 4 = " + marginTop);
+
+	if (marginTop > 30 && mainContentHeight <= screenHeight) {
+		$mainDiv.css("padding-top", marginTop);
+		$mainDiv.css("padding-bottom", marginTop);
+	}
+	else if (marginTop < 30) {
+		$mainDiv.css("padding", "30px");
+	}
 }
 
-$(window).resize(function() {
-	contentReposition();
-})
+$(window).resize(contentReposition);
