@@ -12,9 +12,10 @@ body {
   margin: 0;
   color: #66a266;
   font-family: "Droid Sans", Helvetica, sans-serif;
-  line-height: 1.25em; }
+  line-height: 1.4em; }
 
 h1, h2 {
+  color: #477547;
   font-family: "Codystar", Helvetica, sans-serif;
   text-align: center; }
 
@@ -111,8 +112,9 @@ a:hover {
   margin: 10px 10px 40px 10px; }
   .section h2 {
     margin-bottom: 5px;
-    font-size: 1.75em; }
+    font-size: 2em; }
   .section ul {
+    margin-left: 25px;
     list-style-position: outside;
     list-style-image: url("../img/heart.png"); }
     .section ul li {
@@ -125,6 +127,13 @@ a:hover {
 
 #adventure .section {
   text-align: left; }
+#adventure p:first-of-type:first-letter {
+  float: left;
+  padding: 0 5px 0 10px;
+  color: #a8d3a6;
+  font-size: 3.125em;
+  font-family: 'Petit Formal Script', cursive;
+  line-height: 0.85em; }
 
 #wedding-party .section {
   text-align: left; }
@@ -145,5 +154,6 @@ a:hover {
     max-width: none; }
 
 .registry-image {
+  width: 50%;
   max-width: 400px;
   margin: 10px; }

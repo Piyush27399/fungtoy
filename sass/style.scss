@@ -9,10 +9,11 @@ body {
 	margin: 0;
 	color: $dark-green;
 	font-family: $font-stack;
-	line-height: 1.25em;
+	line-height: 1.4em;
 }
 
 h1, h2 {
+	color: $title-green;
 	font-family: $header-font-stack;
 	text-align: center;
 }
@@ -121,9 +122,10 @@ a:hover {
 	margin: 10px 10px 40px 10px;
 	h2 {
 		margin-bottom: 5px;
-		font-size: rem-calc(28);
+		font-size: rem-calc(32);
 	}
 	ul {
+		margin-left: 25px;
 		list-style-position: outside;
 		list-style-image: url("../img/heart.png");
 		li {
@@ -141,6 +143,14 @@ a:hover {
 #adventure {
 	.section {
 		text-align: left;
+	}
+	p:first-of-type:first-letter {
+		float: left;
+		padding: 0 5px 0 10px;
+		color: $seafoam; 
+		font-size: rem-calc(50); 
+		font-family: 'Petit Formal Script', cursive;
+		line-height: 0.85em;
 	}
 }
 
@@ -174,6 +184,7 @@ a:hover {
 }
 
 .registry-image {
+	width: 50%;
 	max-width: 400px;
 	margin: 10px;
 }
