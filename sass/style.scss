@@ -51,7 +51,7 @@ a:hover {
 #l-main-content {
 	display: block;
 	position: relative;
-	max-width: 1200px;
+	max-width: 1000px;
 	margin: 0 auto;
 	padding: 40px;
 	border: 10px solid $green-border;
@@ -70,7 +70,7 @@ a:hover {
 	#florish {
 		width: 20%;
 	}
-	#fungtoy {
+	#kb {
 		width: 60%;
 		margin-bottom: 40px;
 		border-radius: $radius;
@@ -108,7 +108,7 @@ a:hover {
 }
 
 .l-content-div {
-	max-width: 1200px;
+	max-width: 1000px;
 	margin: 50px auto;
 	padding: 30px 50px;
 	border: 5px solid $green-border;
@@ -184,8 +184,18 @@ a:hover {
 }
 
 .registry-image {
-	width: 50%;
+	width: 60%;
 	max-width: 400px;
 	margin: 10px;
 }
 
+#contact {
+	p {
+		font-size: rem-calc(18);
+	}
+	#fungtoy {
+		width: 50%;
+		margin: 20px 0;
+		border-radius: $radius;
+	}
+}
