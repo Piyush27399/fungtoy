@@ -1,3 +1,5 @@
+// Navigation scroll down to links
+
 function scrollDown(name) {
 	var aTag = $("a[name='" + name + "']");
 	$('html,body').animate({scrollTop: aTag.offset().top}, 'slow');
@@ -23,15 +25,21 @@ $('#contact-link').click(function() {
 	scrollDown('contact');
 });
 
+// Reposition main div content to vertically center with background
+
 function contentReposition() {
-	var $screenHeight = $(window).height();
 	var $mainDiv = $('.l-main-div');
+	var $screenHeight = $(window).height();
 	var $mainContentHeight = $('#l-main-content').outerHeight(true);
 	var marginTop = ($screenHeight - $mainContentHeight) / 2;
 
 	if (marginTop > 30 && $mainContentHeight <= $screenHeight) {
-		$mainDiv.css("padding-top", marginTop);
-		$mainDiv.css("padding-bottom", marginTop);
+		$mainDiv.css({
+			"padding-top": marginTop,
+			"padding-bottom": marginTop,
+			"padding-left": "30px",
+			"padding-right": "30px"
+		});
 	}
 	else if (marginTop < 30) {
 		$mainDiv.css("padding", "30px");
@@ -39,3 +47,4 @@ function contentReposition() {
 }
 
 $(window).resize(contentReposition);
+$(document).ready(contentReposition);
