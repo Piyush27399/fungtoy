@@ -65,7 +65,8 @@ a:hover {
     #l-main-content h1 span {
       letter-spacing: 2.5px; }
   #l-main-content #florish {
-    width: 20%; }
+    width: 20%;
+    min-width: 100px; }
   #l-main-content #kb {
     width: 60%;
     margin-bottom: 40px;

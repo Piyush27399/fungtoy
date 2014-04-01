@@ -1,55 +1,13 @@
-/*
-Syntax error: Undefined variable: "$small-only".
-        on line 2 of sass/media-queries.scss
+/* sass variables */
+/* 0, 640px */
+/* 641px, 1024px */
+/* 1025px, 1440px */
+/* 1441px, 1920px */
+/* 1921px */
+@media only screen and (max-width: upper-bound(0em, 40em)) {
+  .l-content-div {
+    margin: 20px auto;
+    padding: 30px 20px; }
 
-1: // @media #{$small-up} { }
-2: @media #{$small-only} { }
-3: 
-4: // @media #{$medium-up} { }
-5: // @media #{$medium-only} { }
-6: 
-7: // @media #{$large-up} { }
-
-Backtrace:
-sass/media-queries.scss:2
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/script/variable.rb:49:in `_perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/script/node.rb:40:in `perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:398:in `block in run_interp_no_strip'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:396:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:396:in `run_interp_no_strip'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:406:in `run_interp'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:360:in `visit_media'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/root_node.rb:20:in `render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/engine.rb:315:in `_render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/engine.rb:262:in `render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:235:in `watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/plugin.rb:107:in `method_missing'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/exec.rb:463:in `watch_or_update'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/exec.rb:326:in `process_result'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/exec.rb:41:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/exec.rb:21:in `parse!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/bin/sass:13:in `<top (required)>'
-/usr/bin/sass:23:in `load'
-/usr/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$small-only\".\A         on line 2 of sass/media-queries.scss\A \A 1: // @media #{$small-up} { }\A 2: @media #{$small-only} { }\A 3: \A 4: // @media #{$medium-up} { }\A 5: // @media #{$medium-only} { }\A 6: \A 7: // @media #{$large-up} { }"; }
+  .section ul {
+    margin-left: 0px; } }
