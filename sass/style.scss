@@ -69,6 +69,7 @@ a:hover {
 	}
 	#florish {
 		width: 20%;
+		min-width: 100px;
 	}
 	#kb {
 		width: 60%;
@@ -167,10 +168,6 @@ a:hover {
 		margin: 10px;
 		border-radius: $radius;
 	}
-}
-
-#wedding-details {
-
 }
 
 #map-wedding {

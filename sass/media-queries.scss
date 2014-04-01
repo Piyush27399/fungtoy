@@ -1,5 +1,9 @@
 // @media #{$small-up} { }
-@media #{$small-only} { }
+@media #{$small-only} { 
+	#l-main-content {
+		margin: 30px 10px;
+	}
+}
 
 // @media #{$medium-up} { }
 // @media #{$medium-only} { }
