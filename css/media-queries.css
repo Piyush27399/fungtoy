@@ -1,13 +1,10 @@
-/* sass variables */
-/* 0, 640px */
-/* 641px, 1024px */
-/* 1025px, 1440px */
-/* 1441px, 1920px */
-/* 1921px */
-@media only screen and (max-width: upper-bound(0em, 40em)) {
+@media screen and (max-width: 640px) {
+  .l-secondary-div {
+    padding: 10px; }
+
   .l-content-div {
     margin: 20px auto;
-    padding: 30px 20px; }
+    padding: 5px; }
 
   .section ul {
     margin-left: 0px; } }

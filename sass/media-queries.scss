@@ -1,10 +1,11 @@
-@import "sass-styles";
 
-// @media #{$small-up} { }
-@media #{$small-only} { 
+@media screen and (max-width: 640px) {
+	.l-secondary-div {
+		padding: 10px;
+	}
 	.l-content-div {
 		margin: 20px auto;
-		padding: 30px 20px;
+		padding: 5px;
 	}
 	.section {
 		ul {
@@ -12,15 +13,3 @@
 		}
 	}
 }
-
-// @media #{$medium-up} { }
-// @media #{$medium-only} { }
-
-// @media #{$large-up} { }
-// @media #{$large-only} { }
-
-// @media #{$xlarge-up} { }
-// @media #{$xlarge-only} { }
-
-// @media #{$xxlarge-up} { }
-// @media #{$xxlarge-only} { }
