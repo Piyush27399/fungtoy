@@ -61,5 +61,5 @@ function contentReposition() {
 window.onload = contentReposition;
 $(window).resize(contentReposition);
 $(document).ready(function() {
-    mapTouchup(initialize())
+    mapTouchup(initialize());
 });
