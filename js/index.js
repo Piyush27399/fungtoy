@@ -58,8 +58,9 @@ function contentReposition() {
 	}
 }
 
-window.onload = contentReposition;
+window.onload = function() {
+	contentReposition();
+	mapTouchup(initialize());
+};
 $(window).resize(contentReposition);
-$(document).ready(function() {
-    mapTouchup(initialize());
-});
+
