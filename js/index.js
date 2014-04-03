@@ -58,5 +58,7 @@ function contentReposition() {
 	}
 }
 
-$(document).ready(contentReposition);
-$(window).resize(contentReposition);
+$(document).ready(function() {
+	contentReposition();
+	$(window).resize(contentReposition);
+});
