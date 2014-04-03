@@ -62,6 +62,10 @@ function initialize() {
         }
     }
 
+    var locations = [
+        [],
+    ]
+
     return map;
 }
 
@@ -79,3 +83,7 @@ function mapTouchup(map){
         setMapScrollWheel(map, false);
     });
 }
+
+$(document).ready(function() {
+    mapTouchup(initialize())
+});
