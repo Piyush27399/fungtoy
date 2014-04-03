@@ -28,7 +28,7 @@ $('#contact-link').click(function() {
 // Reposition main div content to vertically center with background
 
 function contentReposition() {
-	var $mainDiv = $('.l-main-div');
+	var $mainDiv = $('#l-main-div');
 	var $screenHeight = $(window).height();
 	var $screenWidth = $(window).width();
 	var $mainContentHeight = $('#l-main-content').outerHeight(true);
@@ -57,5 +57,5 @@ function contentReposition() {
 	}
 }
 
-$(window).resize(contentReposition);
 $(document).ready(contentReposition);
+$(window).resize(contentReposition);

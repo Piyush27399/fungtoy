@@ -29,7 +29,7 @@ a:hover {
   clear: both;
   height: 0; }
 
-.l-main-div {
+#l-main-div {
   display: block;
   position: relative;
   width: 100%;
