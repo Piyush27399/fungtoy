@@ -58,7 +58,6 @@ function contentReposition() {
 	}
 }
 
-$(document).ready(function() {
-	contentReposition();
-	$(window).resize(contentReposition);
-});
+$(document).ready(contentReposition);
+$(window).onload(contentReposition);
+$(window).resize(contentReposition);
