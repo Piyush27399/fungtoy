@@ -59,5 +59,5 @@ function contentReposition() {
 }
 
 $(document).ready(contentReposition);
-$(window).onload(contentReposition);
+window.onload = contentReposition;
 $(window).resize(contentReposition);
