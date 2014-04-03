@@ -29,9 +29,10 @@ $('#contact-link').click(function() {
 
 function contentReposition() {
 	var $mainDiv = $('#l-main-div');
+	var $mainContent = $('#l-main-content');
 	var $screenHeight = $(window).height();
 	var $screenWidth = $(window).width();
-	var $mainContentHeight = $('#l-main-content').outerHeight(true);
+	var $mainContentHeight = $mainContent.outerHeight(true);
 	var marginTop = ($screenHeight - $mainContentHeight) / 2;
 
 	if (marginTop <= 30) {
