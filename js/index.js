@@ -2,27 +2,26 @@
 
 function scrollDown(name) {
 	var aTag = $("a[name='" + name + "']");
-	$('html,body').animate({scrollTop: aTag.offset().top}, 'slow');
+	$('html,body').animate({scrollTop: aTag.offset().top}, 1000, 'swing');
 }
 
 $('#adventure-link').click(function() {
 	scrollDown('adventure');
 });
-
 $('#wedding-party-link').click(function() {
 	scrollDown('wedding-party');
 });
-
 $('#wedding-details-link').click(function() {
 	scrollDown('wedding-details');
 });
-
 $('#registry-link').click(function() {
 	scrollDown('registry');
 });
-
 $('#contact-link').click(function() {
 	scrollDown('contact');
+});
+$('.nav-link').click(function() {
+	scrollDown('nav');
 });
 
 // Reposition main div content to vertically center with background

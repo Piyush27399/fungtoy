@@ -10,7 +10,7 @@ body {
 	color: $dark-green;
 	font-weight: normal;
 	font-family: $font-stack;
-	line-height: 1.4em;
+	line-height: 1.45em;
 }
 
 h1, h2 {
@@ -18,6 +18,7 @@ h1, h2 {
 	font-weight: normal;
 	font-family: $header-font-stack;
 	text-align: center;
+	letter-spacing: 1px;
 }
 
 a {
@@ -108,12 +109,15 @@ a:hover {
 	padding: 50px;
 	background: transparent url("../img/watercolor01.jpg") repeat;
 	background-position: center;
+	address {
+		text-align: right;
+	}
 }
 
 .l-content-div {
 	max-width: 1000px;
 	margin: 50px auto;
-	padding: 30px 50px;
+	padding: 30px 80px;
 	border: 5px solid $green-border;
 	border-radius: $radius;
 	@include inset-box-shadow(#888);
@@ -125,7 +129,8 @@ a:hover {
 	margin: 10px 10px 40px 10px;
 	h2 {
 		margin-bottom: 5px;
-		font-size: rem-calc(32);
+		font-size: rem-calc(30);
+		line-height: 1.25em;
 	}
 	ul {
 		margin-left: 25px;
@@ -140,7 +145,15 @@ a:hover {
 .florish-mini {
 	display: block;
 	width: 100px;
-	margin: 0 auto;
+	margin: 0 auto 10px auto;
+}
+
+.nav-link {
+	img {
+		display: block;
+		margin: 0 auto;
+		max-width: 44px;
+	}
 }
 
 #adventure {
@@ -158,27 +171,48 @@ a:hover {
 }
 
 #wedding-party {
+	h4 {
+		margin: 10px 0;
+		font-size: rem-calc(18);
+		font-weight: 400;
+	}
 	.section {
 		text-align: left;
 	}
 	.party {
 		float: left;
+		margin-bottom: 20px;
+		p {
+			margin-bottom: 0;
+		}
 	}
 	.party-image {
 		float: left;
 		width: 150px;
-		margin: 10px;
+		margin-right: 20px;
 		border-radius: $radius;
 	}
 }
 
-#map-wedding {
-	width: 100%;
-	height: 500px;
-	margin: 0 auto;
-	border-radius: $radius;
-	img {
-		max-width: none
+#wedding-details {
+	.hotel-info {
+		a {
+			font-size: rem-calc(20);
+			line-height: 1.65em;
+		}
+	}
+	.transport-parking {
+		display: inline-block;
+		margin: 0 0 15px 0;
+	}
+	#map-wedding {
+		width: 100%;
+		height: 500px;
+		margin: 20px auto;
+		border-radius: $radius;
+		img {
+			max-width: none
+		}
 	}
 }
 
@@ -190,11 +224,12 @@ a:hover {
 
 #contact {
 	p {
+		margin-bottom: 0;
 		font-size: rem-calc(18);
 	}
 	#fungtoy {
 		width: 50%;
-		margin: 20px 0;
+		margin: 30px 0;
 		border-radius: $radius;
 	}
 }
