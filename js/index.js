@@ -1,27 +1,27 @@
 // Navigation scroll down to links
 
-function scrollDown(name) {
+function scrollDown(name, time) {
 	var aTag = $("a[name='" + name + "']");
-	$('html,body').animate({scrollTop: aTag.offset().top}, 1000, 'swing');
+	$('html,body').animate({scrollTop: aTag.offset().top}, time, 'swing');
 }
 
 $('#adventure-link').click(function() {
-	scrollDown('adventure');
+	scrollDown('adventure', 500);
 });
 $('#wedding-party-link').click(function() {
-	scrollDown('wedding-party');
+	scrollDown('wedding-party', 1000);
 });
 $('#wedding-details-link').click(function() {
-	scrollDown('wedding-details');
+	scrollDown('wedding-details', 1500);
 });
 $('#registry-link').click(function() {
-	scrollDown('registry');
+	scrollDown('registry', 2000);
 });
 $('#contact-link').click(function() {
-	scrollDown('contact');
+	scrollDown('contact', 2000);
 });
 $('.nav-link').click(function() {
-	scrollDown('nav');
+	scrollDown('nav', 1000);
 });
 
 // Reposition main div content to vertically center with background
