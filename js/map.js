@@ -3,8 +3,8 @@ function initMap() {
     // Map Options!
 
     var mapOptions = {
-        center: new google.maps.LatLng(37.792694,-122.399724),
-        zoom: 10,
+        center: new google.maps.LatLng(37.73,-122.33),
+        zoom: 11,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         scrollwheel: false
     };
@@ -82,8 +82,14 @@ function initMap() {
         });
     }
 
+    google.maps.event.addListener(marker, 'click', function(marker, i) {
+        infowindow.open(map, marker);
+    });
+
     return map;
 }
+
+google.maps.event.addDomListener(window, 'load', initialize);
 
 function setMapScrollWheel(pMap, pVal) {
     pMap.setOptions({ scrollwheel: pVal });
