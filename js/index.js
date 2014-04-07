@@ -59,7 +59,7 @@ function contentReposition() {
 
 window.onload = function() {
 	contentReposition();
-	mapTouchup(initialize());
+	mapTouchup(initMap());
 };
 $(window).resize(contentReposition);
 

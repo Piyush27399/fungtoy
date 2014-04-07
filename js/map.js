@@ -1,4 +1,4 @@
-function initialize() {
+function initMap() {
 
     // Map Options!
 
@@ -48,7 +48,6 @@ function initialize() {
     map.setOptions({styles: styles});
 
     // InfoBox Styles
-
     var infoBoxOptions = {
         boxStyle: { 
             background: "#fff",
@@ -63,8 +62,25 @@ function initialize() {
     }
 
     var locations = [
-        [],
+        ['Shakespeare Garden', 37.768682, -122.466783, 'img/wedding-date.png'],
+        ['Academy of Science', 37.769979, -122.466288, 'img/wedding-glasses.png'],
+        ['Grand Hyatt San Francisco', 37.78913, -122.40725, 'img/hotel.png'],
+        ['Westin SFO', 37.604182, -122.376023, 'img/hotel.png'],
+        ['Sutter & Stockton Parking', 37.78956, -122.4068945, 'img/wedding-parking.png']
     ]
+
+    for (var i = 0; i < locations.length; i++) {
+        var location = locations[i];
+        var tempLatLong = new google.maps.LatLng(location[1],location[2]);
+        var img = {
+            url: location[3],
+        };
+        new google.maps.Marker({
+            position: tempLatLong,
+            map: map,
+            icon: img
+        });
+    }
 
     return map;
 }
