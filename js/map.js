@@ -51,25 +51,25 @@ function initMap() {
         ['Sutter & Stockton Parking', 37.78956, -122.4068945, 'img/wedding-parking.png']
     ]
 
+    var marker;
+    var markers = [];
+    var infowindow = new google.maps.InfoWindow();
+
     for (var i = 0; i < locations.length; i++) {
         var location = locations[i];
-        var tempLatLong = new google.maps.LatLng(location[1],location[2]);
-        var img = {
-            url: location[3]
-        };
-        var marker = new google.maps.Marker({
-            position: tempLatLong,
+        var img = {url: location[3]};
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(location[1],location[2]),
             map: map,
             icon: img
         });
-        var infowindow = new google.maps.InfoWindow({
-            content: location[0]
-        });
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
+                infowindow.setContent(locations[i][0]);
+                infowindow.open(map, marker);
+            }
+        })(marker, i));
     }
-
-    google.maps.event.addListener(marker, 'click', function(i, marker) {
-        infowindow.open(map, marker);
-    });
 }
 
 google.maps.event.addDomListener(window, 'load', initMap);
