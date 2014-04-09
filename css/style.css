@@ -172,6 +172,10 @@ a:hover {
   border-radius: 10px; }
   #wedding-details #map-wedding img {
     max-width: none; }
+  #wedding-details #map-wedding h3 {
+    margin-bottom: 0; }
+  #wedding-details #map-wedding p {
+    margin-top: 5px; }
 
 .registry-image {
   width: 60%;
