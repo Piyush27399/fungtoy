@@ -208,11 +208,15 @@ a:hover {
 	#directions-panel {
 		height: 100%;
         width: 100%;
+        margin: 15px 0;
         overflow: auto;
         .adp-directions {
         	width: 100%;
         	margin: 0 auto;
         }
+    	td, span, div {
+    		color: $dark-green;
+    	}
 	}
 	#map-wedding {
 		width: 100%;

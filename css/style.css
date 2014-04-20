@@ -168,10 +168,13 @@ a:hover {
 #wedding-details #directions-panel {
   height: 100%;
   width: 100%;
+  margin: 15px 0;
   overflow: auto; }
   #wedding-details #directions-panel .adp-directions {
     width: 100%;
     margin: 0 auto; }
+  #wedding-details #directions-panel td, #wedding-details #directions-panel span, #wedding-details #directions-panel div {
+    color: #66a266; }
 #wedding-details #map-wedding {
   width: 100%;
   height: 500px;
