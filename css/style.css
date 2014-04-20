@@ -165,6 +165,13 @@ a:hover {
 #wedding-details .transport-parking {
   display: inline-block;
   margin: 0 0 15px 0; }
+#wedding-details #directions-panel {
+  height: 100%;
+  width: 100%;
+  overflow: auto; }
+  #wedding-details #directions-panel .adp-directions {
+    width: 100%;
+    margin: 0 auto; }
 #wedding-details #map-wedding {
   width: 100%;
   height: 500px;

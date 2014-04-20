@@ -58,6 +58,7 @@ function initMap() {
     var directionsDisplay = new google.maps.DirectionsRenderer();
     var directionsService = new google.maps.DirectionsService();
     directionsDisplay.setMap(map);
+    directionsDisplay.setPanel(document.getElementById('directions-panel'));
 
     for (var i = 0; i < locations.length; i++) {
         var location = locations[i];
